@@ -1,0 +1,15 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local build and cache files
+__pycache__/
+.pytest_cache/
+*.log
