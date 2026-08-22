@@ -37,9 +37,9 @@
   - `Project:` [π₀.₅](https://pi.website/blog/pi05)
   - `Code:` [Physical-Intelligence/openpi](https://github.com/Physical-Intelligence/openpi)
 
-- **[π₀.₆: a VLA That Learns From Experience](https://arxiv.org/abs/2511.14759)** · `2025`
+- **[π₀.₆*: a VLA That Learns From Experience](https://arxiv.org/abs/2511.14759)** · `2025`
   - Focus: 引入基于经验和反馈的持续改进，使 VLA 能够从实际执行结果中学习。
-  - `Project:` [π₀.₆](https://pi.website/blog/pistar06)
+  - `Project:` [π₀.₆*](https://pi.website/blog/pistar06)
 
 - **[π₀.₇: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](https://arxiv.org/abs/2604.15483)** · `2026`
   - Focus: 研究可 steer 的通用机器人基础模型及其在规模化训练下出现的组合能力。
