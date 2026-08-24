@@ -158,6 +158,9 @@
 - **[Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models](https://arxiv.org/abs/2605.22896)** · `2026 · ICML`
   - Focus: 面向 VLA 的高效 online adaptation，通过 agentic 数据选择和更新降低适应成本。
 
+- **[EXIMO: VLM Guided Exploration of VLA Policies](https://arxiv.org/abs/2608.19891)** · `2026`
+  - Focus: 以 VLM 规划器引导 VLA 探索并采集长时程任务数据，再通过模仿学习与 residual off-policy RL 高效适应新任务。
+
 - **[MEMENTO: Memory-Guided Memetic Code-as-Policy Evolution](https://arxiv.org/abs/2607.22832)** · `2026`
   - Focus: 用记忆引导 memetic search，对 code-as-policy 进行生成、变异、评估和保留。
   - `Code:` [sygkounas/MEMENTO](https://github.com/sygkounas/MEMENTO)
