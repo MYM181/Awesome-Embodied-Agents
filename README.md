@@ -161,6 +161,9 @@
 - **[EXIMO: VLM Guided Exploration of VLA Policies](https://arxiv.org/abs/2608.19891)** · `2026`
   - Focus: 以 VLM 规划器引导 VLA 探索并采集长时程任务数据，再通过模仿学习与 residual off-policy RL 高效适应新任务。
 
+- **[Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-Aware Memory](https://arxiv.org/abs/2608.16889)** · `2026`
+  - Focus: 将完整长任务拆为可独立探索和复用的子任务，并以 invocation、handoff 与 lookahead 三类 transition-aware memory 约束冻结 VLA 的调用和技能交接。
+
 - **[MEMENTO: Memory-Guided Memetic Code-as-Policy Evolution](https://arxiv.org/abs/2607.22832)** · `2026`
   - Focus: 用记忆引导 memetic search，对 code-as-policy 进行生成、变异、评估和保留。
   - `Code:` [sygkounas/MEMENTO](https://github.com/sygkounas/MEMENTO)
