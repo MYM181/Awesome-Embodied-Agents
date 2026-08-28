@@ -195,6 +195,10 @@
 - **[VLCP: Vision Language Control Policy — Closed-Loop Code Replanning for Robot Manipulation](https://arxiv.org/abs/2608.16978)** · `2026`
   - Focus: 冻结 VLM 在单个 episode 内根据多视角观测和执行反馈周期性重写 Python 控制函数，将一次性 code-as-policy 扩展为可诊断、修复并沉淀技能的闭环控制策略。
 
+- **[PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration](https://arxiv.org/abs/2608.21031)** · `2026`
+  - Focus: 为 code-as-policy 引入主动信息获取闭环，由 Planner 与 Prioritizer 选择低成本物理探索，并利用机器人本体感知估计视觉不可辨识的质量与刚度。
+  - `Project:` [PhysCaP](https://physcap.github.io/)
+
 - **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** · `2026`
   - Focus: 将冻结 VLA 作为可调用 primitive，通过记忆引导的 agent 进行重试、纠错和可靠性提升。
   - `Project:` [Harness VLA](https://harnessvla.github.io/)
