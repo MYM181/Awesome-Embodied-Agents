@@ -59,6 +59,14 @@
   - Focus: 将连续传感器观测编码为多模态输入，研究语言模型在具身任务中的感知、推理与控制。
   - `Project:` [PaLM-E](https://palm-e.github.io/)
 
+- **[Riemann-1.0: An Embodied World Action Model for Physical AI](https://arxiv.org/abs/2608.27033)** · `2026`
+  - Focus: 以统一因果自回归模型同时充当机器人策略与环境模拟器，并支持多种机器人形态的动作生成和未来预测。
+
+- **[PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models](https://arxiv.org/abs/2609.14973)** · `2026`
+  - Focus: 将物理理解、动作生成与未来状态预测统一到 physical foundation model 中，连接视觉语言推理和真实世界交互。
+  - `Project:` [PhysBrain 1.5](https://deepcybo-physai.github.io/PhysBrain-1.5/)
+  - `Code:` [DeepCybo-PhysAI/PhysBrain-1.5](https://github.com/DeepCybo-PhysAI/PhysBrain-1.5)
+
 ## 2. Long-Horizon Planning and Embodied Reasoning
 
 关注长时程任务分解、交互式推理、空间记忆、执行反馈和高层 agent 对机器人策略的组织。
@@ -106,6 +114,56 @@
   - Focus: 探索面向具身任务的 agentic execution 范式，将任务理解、规划与物理执行统一到可扩展流程中。
   - `Project:` [OpenETA](https://openmoss.ai/OpenETA/)
   - `Code:` [OpenMOSS/OpenETA](https://github.com/OpenMOSS/OpenETA)
+
+- **[Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation](https://arxiv.org/abs/2608.22800)** · `2026`
+  - Focus: 将物体关系 triplet 转化为跟踪先验，在长时程操作中持续监控执行状态并触发重规划。
+
+- **[ParallelWorld: Test-Time Scaling for Embodied Reasoning](https://arxiv.org/abs/2608.22971)** · `2026`
+  - Focus: 并行模拟多个时间跨度的候选未来，并通过 verifier-guided tree search 选择长时程机器人计划。
+  - `Project:` [ParallelWorld](https://chen-min-22.github.io/ParallelWorld-page/)
+
+- **[R³: Training Robots to Reason in Natural Language via Reinforcement Learning](https://arxiv.org/abs/2608.26053)** · `2026 · CoRL`
+  - Focus: 训练自然语言 robotic reasoner，以 rubric-based reinforcement learning 生成可供低层策略执行的推理和任务指导。
+  - `Project:` [Robotic Reasoner](https://robotic-reasoner.github.io/)
+
+- **[EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy](https://arxiv.org/abs/2608.29896)** · `2026`
+  - Focus: 以图结构组织 operational、imagination 与 evaluation skills，并通过验证、恢复和记忆支持长时程操作。
+  - `Project:` [EMERGE-Policy](https://emerge-policy.github.io/EMERGE-Policy/)
+  - `Code:` [EMERGE-Policy/EMERGE-Policy](https://github.com/EMERGE-Policy/EMERGE-Policy)
+
+- **[EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](https://arxiv.org/abs/2609.01281)** · `2026`
+  - Focus: 用带有前置条件、执行边界和后置验证的 executable skills 封装 VLA，使高层 agent 能可靠组合、恢复和复用机器人能力。
+
+- **[Scaffolding Foundation Models into Physical-World Agents Pushes the Frontier of Long-Horizon Navigation](https://arxiv.org/abs/2608.30396)** · `2026`
+  - Focus: 以 NavMCP 连接 VLM reasoner 与 navigation foundation model executor，并通过意图、观测和记忆通道构成具身执行闭环。
+
+- **[Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation](https://arxiv.org/abs/2607.05377)** · `2026`
+  - Focus: 双向对齐高层 VLM 与低层 VLA，通过兼具可执行性和可处理性的子任务接口完成长时程操作。
+  - `Project:` [Cortex](https://steinate.github.io/cortex.github.io/)
+  - `Code:` [InternRobotics/Cortex](https://github.com/InternRobotics/Cortex)
+
+- **[Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models](https://arxiv.org/abs/2605.13119)** · `2026`
+  - Focus: 将 VLA 组织为具有统一 tool-family 接口的工具，并利用进度反馈、事件触发重规划和 tool-aligned post-training 支持长时程执行。
+
+- **[Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](https://arxiv.org/abs/2502.19417)** · `2025 · ICML`
+  - Focus: 以层级 VLM–VLA 架构处理复杂指令、情境化反馈和开放式任务，使机器人能够在执行中接受高层引导。
+  - `Project:` [Hi Robot](https://www.pi.website/research/hirobot)
+
+- **[SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation](https://arxiv.org/abs/2608.16172)** · `2026`
+  - Focus: 统一比较停止决策与候选动作前缀，通过 stop-aware ranking 自适应确定动作 chunk 的执行长度。
+
+- **[In-Context Robot Learning with VLM Agents](https://arxiv.org/abs/2609.19138)** · `2026`
+  - Focus: GPT-Policy 使用固定的通用 VLM，从视频、动作、目标、历史和反馈中进行无需梯度更新的部署时 in-context learning。
+  - `Project:` [GPT-Policy](https://cheng-haha.github.io/GPT-Policy/)
+  - `Code:` [cheng-haha/GPT-Policy](https://github.com/cheng-haha/GPT-Policy)
+
+- **[HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness](https://arxiv.org/abs/2609.15195)** · `2026`
+  - Focus: 以训练自由的 agent harness 组织感知、检索、grounding、导航、恢复与终止，并结合事件记忆和时空图支持长时程 VLN。
+  - `Project:` [HarnessVLN](https://harnessvln.netlify.app/)
+
+- **[Embodied Agents Take Control: Minimal-Interface Zero-Shot Agents Rival Industrial-Scale Policies in Vision-and-Language Navigation](https://arxiv.org/abs/2607.26148)** · `2026`
+  - Focus: 研究通用软件 agent harness 如何仅凭 RGB 观测和离散动作完成 zero-shot 导航，并分析模型、harness 与接口的影响。
+  - `Project:` [MIP](https://jianzhou0420.github.io/mip/)
 
 ## 3. Memory, Skills, and Self-Improvement
 
@@ -182,6 +240,34 @@
 
 - **[LEACL: LLM-Enhanced Automatic Curriculum Learning for Reinforcement Learning in Long-Horizon Manipulation Tasks](https://arxiv.org/abs/2607.23515)** · `2026`
   - Focus: 使用 LLM 自动生成和调整课程，提升长时程操作任务中的强化学习效率。
+
+- **[Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning](https://arxiv.org/abs/2608.21204)** · `2026`
+  - Focus: 在冻结的行为克隆策略上学习 off-policy Q-function，吸收成功与失败 rollout，实现在线规划和持续自改进。
+  - `Project:` [Q-Planning](https://q-planning.github.io/)
+
+- **[Motus2: A Self-Evolving General World Model for Dexterous Manipulation](https://motus-robotics.github.io/motus2/)** · `2026`
+  - Focus: 以共享权重的 policy、simulator 和 evaluator 构成决策—学习闭环，使灵巧操作 world model 能从交互经验中自演化。
+
+- **[AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies](https://arxiv.org/abs/2608.29537)** · `2026`
+  - Focus: 构建 achievement-grounded task memory，只有在物理证据验证子目标达成后才推进任务状态，减少错误记忆和计划漂移。
+
+- **[PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](https://arxiv.org/abs/2608.30760)** · `2026`
+  - Focus: 由 learned skill learner 对持久技能库进行批量新增、细化、合并和移除，同时保持执行器冻结。
+  - `Project:` [PRACTICE](https://baai-agents.github.io/PRACTICE)
+
+- **[Self-Evolving Embodied Agents via Skill-Harness Evolution](https://arxiv.org/abs/2608.11350)** · `2026`
+  - Focus: SHAPER 在冻结基础模型的前提下，利用目标任务 rollout 同时演化可复用技能与负责上下文组织和代码执行的 harness。
+
+- **[WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models](https://arxiv.org/abs/2609.03681)** · `2026`
+  - Focus: 学习何时以及想象多长时间，使用受限的 world action model rollout 和相对结果比较高效改进 VLA。
+
+- **[VLA-Precision: Asymmetric Co-Bootstrapping for Efficient Real-World Online RL of Vision-Language-Action Models](https://arxiv.org/abs/2609.04355)** · `2026`
+  - Focus: 通过 asymmetric co-bootstrapping 与 ACoB-Stream 提升 VLA 在真实机器人上的在线强化学习效率和精度。
+  - `Project:` [VLA-Precision](https://vla-precision.github.io/)
+
+- **[REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs](https://arxiv.org/abs/2609.01215)** · `2026`
+  - Focus: 通过 wake/sleep 循环维护技能库，利用 latent world model 中的行为等价性核验并合成 typed motor programs。
+  - `Project:` [Apple Machine Learning Research](https://machinelearning.apple.com/research/refactor-vla-motor-programs)
 
 ## 4. Harnesses, Tools, and Orchestration
 
@@ -269,6 +355,36 @@
 - **[HarnessWAM: Bridging Prediction and Deliberation in World Action Models](https://arxiv.org/abs/2608.09516)** · `2026`
   - Focus: 在 world action model 中连接快速预测与审慎 deliberation，提升执行时的决策可靠性。
 
+- **[Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use](https://arxiv.org/abs/2608.14047)** · `2026 · CVPR`
+  - Focus: ART 在执行时动态注入低层视觉、高层 affordance 与 embodiment 工具，使 VLA 从固定策略演化为可调用工具的 agent。
+
+- **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** · `2026`
+  - Focus: 设计紧凑的语义动作接口，使通用 VLM 能跨机器人形态直接控制实体系统，并通过 GUMI 支持具身交互。
+  - `Project:` [Show-Harness](https://showlab.github.io/Show-Harness/)
+  - `Code:` [showlab/Show-Harness](https://github.com/showlab/Show-Harness)
+
+- **[RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning](https://arxiv.org/abs/2607.18060)** · `2026`
+  - Focus: 由具备记忆的 coding agent 编排和迭代异构机器人策略，将策略选择、执行诊断与代码修正组织为闭环。
+
+- **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** · `2026`
+  - Focus: 让 coding agents 在训练时演化多文件 repository-as-policy，把模块化软件结构直接作为机器人策略表示。
+  - `Project:` [RHO](https://rho-robotics.github.io/)
+  - `Code:` [KE7/HELIX](https://github.com/KE7/HELIX)
+
+- **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** · `2024`
+  - Focus: 由 VLM 生成关系关键点约束形式的 Python cost functions，再通过层级优化实现闭环、长时程机器人操作。
+  - `Project:` [ReKep](https://rekep-robot.github.io/)
+  - `Code:` [huangwl18/ReKep](https://github.com/huangwl18/ReKep)
+
+- **[2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation](https://arxiv.org/abs/2609.11308)** · `2026`
+  - Focus: 将持久任务记忆保留在 agent 侧，让无状态 action model 仅接收语言与二维提示，以研究具身系统中的接口带宽和职责分解。
+
+- **[Harnessing Embodied Agents: Runtime Governance for Policy-Constrained Execution](https://arxiv.org/abs/2604.07833)** · `2026`
+  - Focus: 以外部 runtime governance 提供策略检查、能力准入、持续监控、回滚和人工接管，约束物理世界 agent 的执行。
+
+- **[FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation](https://arxiv.org/abs/2608.26645)** · `2026 · CVPR`
+  - Focus: 结合 Retry/Reset 恢复机制、MLLM 离线失败分析和在线监控，使具身 agent 能识别并修复执行失败。
+
 ## 5. World Models and Action-Conditioned Planning
 
 关注动作条件世界模型、未来状态想象和基于世界模型的 test-time planning。
@@ -292,6 +408,29 @@
   - Focus: 从生成的第一视角视频中蒸馏 agentic skills，增强全身操作的泛化能力。
   - `Project:` [RoboReact](https://roboreact.github.io/)
 
+- **[Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning](https://arxiv.org/abs/2608.24885)** · `2026`
+  - Focus: WorldEcho 诊断视频 world model 在偏离专家轨迹时的动作跟随能力，WorldSync 通过覆盖、grounding 和 intervention alignment 加以改进。
+
+- **[CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators](https://arxiv.org/abs/2608.27406)** · `2026`
+  - Focus: 以末端执行器动作、语言和 latent actions 训练跨 embodiment 视频世界模型，并作为 zero-shot simulator 使用。
+  - `Project:` [CLAP](https://omni-clap.github.io/)
+  - `Code:` [omni-CLAP/clap](https://github.com/omni-CLAP/clap)
+
+- **[WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression](https://arxiv.org/abs/2608.26239)** · `2026`
+  - Focus: 使用 next-scale autoregression 建模因果交错的观测和动作，并结合尺度压缩记忆、dream forcing 与 on-policy alignment 扩展 world-action model。
+  - `Project:` [WALL-SS](https://x2robot.com/pages/ss)
+  - `Resources:` [X-Square-Robot/wall-ss](https://github.com/X-Square-Robot/wall-ss)
+
+- **[SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators](https://arxiv.org/abs/2609.09155)** · `2026`
+  - Focus: 通过视觉校准 episode 推断特定部署环境中的动作—视觉映射，使 zero-shot simulator 能在 test time 改进机器人策略。
+  - `Project:` [SyncWorld](https://umass-embodied-agi.github.io/SyncWorld/)
+  - `Code:` [UMass-Embodied-AGI/SyncWorld](https://github.com/UMass-Embodied-AGI/SyncWorld)
+
+- **[Quo Vadis, World Modeling? Towards Interactive World Proxies for Continually Improving Agents](https://arxiv.org/abs/2608.02713)** · `2026`
+  - Focus: 以六类 world proxy 和三级 agent improvement 系统化分析交互式世界建模，并提出面向持续改进 agent 的研究路线。
+  - `Project:` [Agentic World Models](https://worldbench.github.io/awesome-agentic-world-model/)
+  - `Resources:` [worldbench/awesome-agentic-world-model](https://github.com/worldbench/awesome-agentic-world-model)
+
 ## 6. Reward, Verification, and Process Assessment
 
 关注机器人轨迹的过程级评价、视觉语言奖励、失败驱动的 dense reward 和通用验证器。
@@ -312,6 +451,19 @@
 - **[PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment](https://arxiv.org/abs/2608.14284)** · `2026`
   - Focus: 将 process reward model 用作 robot process judge，对操作过程进行细粒度评估。
   - `Project:` [PRM-as-a-Judge](https://prm-as-a-judge.github.io)
+
+- **[Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons](https://arxiv.org/abs/2603.02115)** · `2026 · RSS`
+  - Focus: 联合建模轨迹内任务进度和轨迹间偏好，并通过 RBM-1M 扩展机器人策略的过程级评估。
+  - `Project:` [Robometer](https://robometer.github.io/)
+  - `Code:` [robometer/robometer](https://github.com/robometer/robometer)
+
+- **[Robo-Dopamine: General Process Reward Modeling for High-Precision Robotic Manipulation](https://arxiv.org/abs/2512.23703)** · `2026 · CVPR`
+  - Focus: 使用多视角、step-aware process reward model 与策略不变 reward shaping，为真实机器人强化学习提供密集反馈。
+  - `Project:` [Robo-Dopamine](https://robo-dopamine.github.io/)
+
+- **[No Free Checker: A Survey of Verifiers for Robot Policies](https://arxiv.org/abs/2609.09250)** · `2026`
+  - Focus: 从 availability 与 credibility 两个维度系统梳理约 150 种机器人策略 verifier，并分析验证失真和 reward hacking 风险。
+  - `Resources:` [Awesome Robot Verifier](https://zjuscl.github.io/Awesome-Robot-Verifier/)
 
 ## Link and Maintenance Policy
 
